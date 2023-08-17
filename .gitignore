@@ -1,0 +1,12 @@
+/packages
+/CardRemovalTool/obj
+/CardRemovalTool/bin
+/.vs/CardRemovalTool/v15/.suo
+/.vs/CardRemovalTool/v15/Server/sqlite3/db.lock
+/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide
+/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide-shm
+/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide-wal
+/CardRemovalTool/.vs/CardRemovalTool/v15/.suo
+/CardRemovalTool/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide
+/CardRemovalTool/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide-shm
+/CardRemovalTool/.vs/CardRemovalTool/v15/Server/sqlite3/storage.ide-wal
