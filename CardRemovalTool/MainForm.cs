@@ -593,5 +593,23 @@ namespace CardRemovalTool
             File.WriteAllText(@"C:\Users\Regent\Desktop\article 1\holdem_ranges\subsctruct.txt", range);
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var keys = CardWeights.Keys.Select(t => t.ToString()).ToList();
+            keys.Reverse();
+
+            var resKeys = new List<string>();
+            resKeys.AddRange(keys.Where(t => t.EndsWith("c")).ToList());
+            resKeys.AddRange(keys.Where(t => t.EndsWith("d")).ToList());
+            resKeys.AddRange(keys.Where(t => t.EndsWith("h")).ToList());
+            resKeys.AddRange(keys.Where(t => t.EndsWith("s")).ToList());
+
+            var cv = CardWeights.ToDictionary(t => t.Key.ToString(), t => Math.Round(t.Value,2));
+
+            var weights = string.Join(" ", resKeys.Select(t => cv[t]).ToList());
+
+            Clipboard.SetText(weights);
+        }
     }
 }
